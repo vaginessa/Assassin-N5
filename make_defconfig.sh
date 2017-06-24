@@ -3,7 +3,7 @@
 DEFCONFIG_FILE=$1
 
 if [ -z "$DEFCONFIG_FILE" ]; then
-	echo "Need defconfig file(hammerhead_defconfig)!"
+	echo "Need defconfig file(assassin_defconfig)!"
 	exit -1
 fi
 
