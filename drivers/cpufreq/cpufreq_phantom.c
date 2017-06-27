@@ -1395,9 +1395,7 @@ static void __exit cpufreq_gov_dbs_exit(void)
 	}
 }
 
-MODULE_AUTHOR("Venkatesh Pallipadi <venkatesh.pallipadi@intel.com>");
-MODULE_AUTHOR("Alexey Starikovskiy <alexey.y.starikovskiy@intel.com>");
-MODULE_AUTHOR("flar2 <asegaert@gmail.com>");
+MODULE_AUTHOR("highridas <highridas617@gmail.com>");
 MODULE_DESCRIPTION("'cpufreq_phantom' - multiphase dynamic cpufreq governor");
 MODULE_LICENSE("GPL");
 
