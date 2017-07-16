@@ -325,6 +325,8 @@ load_b:
 				return 0;
 			if (skb->len < sizeof(struct nlattr))
 				return 0;
+			if (skb->len < sizeof(struct nlattr))
+				return 0;
 			if (A > skb->len - sizeof(struct nlattr))
 				return 0;
 
