@@ -378,6 +378,7 @@ restart:	adr	r0, LC0
 dtb_check_done:
 #endif
 
+	.arch	armv7-a
 /*
  * Check to see if we will overwrite ourselves.
  *   r4  = final kernel address
@@ -395,6 +396,7 @@ dtb_check_done:
 		cmp	r10, r9
 		bls	wont_overwrite
 
+	.arch	armv7-a
 /*
  * Relocate ourselves past the end of the decompressed kernel.
  *   r6  = _edata
@@ -508,6 +510,7 @@ not_relocated:	mov	r0, #0
 		cmp	r2, r3
 		blo	1b
 
+	.arch	armv7-a
 /*
  * The C runtime environment should now be setup sufficiently.
  * Set up some pointers, and start decompressing.
